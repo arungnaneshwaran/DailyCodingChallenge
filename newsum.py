@@ -1,3 +1,8 @@
+'''
+Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+
+'''
+
 def fun(s,k):
     s=sorted(s)
     print(s)
@@ -12,8 +17,8 @@ def fun(s,k):
             else:
                 i+=1
     return False
-s = input('Enter your list: ')
-s = [int(x) for x in s.split(',')]
+s = input('Enter your list seperated by space: ') 
+s = [int(x) for x in s.split(' ')]
 k=int(input("Enter The sum value: "))
 a=fun(s,k)
 print(a)
